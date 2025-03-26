@@ -22,13 +22,14 @@ const sequelize = process.env.DB_URL
       }
     );
 
-// const databaseUrl = process.env.DATABASE_URL;
+// const databaseUrl = process.env.DB_URL;
 
 // if (!databaseUrl) {
 //   throw new Error("DATABASE_URL is not set. Check your environment variables.");
 // }
 
 // const sequelize = new Sequelize(databaseUrl, {
+//   host: "localhost",
 //   dialect: "postgres",
 //   dialectOptions: {
 //     ssl: {
@@ -36,7 +37,7 @@ const sequelize = process.env.DB_URL
 //       rejectUnauthorized: false,
 //     },
 //   },
-//   logging: false,
+// logging: false,
 // });
 
 export default sequelize;
